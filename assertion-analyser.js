@@ -75,7 +75,7 @@ function assertionAnalyser(body) {
   // contain the word 'assertion'
 
   const cleanedBody = body.match(
-    /(?:browser\s*\.\s*)?assert\s*\.\s*\w*\([\s\S]*\)/
+    /(?:browser\s*\.\s*)?assert\s*\.\s*\w*\([\s\S]*\)/  // maybe here
   );
   if (cleanedBody && Array.isArray(cleanedBody)) {
     body = cleanedBody[0];
